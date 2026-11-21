@@ -8,6 +8,6 @@ def order_total(price_cents, quantity):
     if quantity < 1:
         raise ValueError("quantity must be at least 1")
     total = price_cents * quantity
-    if quantity > 12:
+    if quantity >= 12:
         total = total - total * DOZEN_DISCOUNT_PERCENT // 100
     return total
