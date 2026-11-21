@@ -5,7 +5,7 @@ from app.order_total import order_total
  
 class OrderTotalTests(unittest.TestCase):
     def test_single_item(self):
-        self.assertEqual(order_total(350, 1), 350)
+        self.assertEquals(order_total(350, 1), 350)
  
     def test_dozen_gets_discount(self):
         self.assertEqual(order_total(200, 12), 2160)
