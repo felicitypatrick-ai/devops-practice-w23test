@@ -6,7 +6,7 @@ BOX_DISCOUNT_CENTS = 50
  
 def box_price(price_cents):
     """Return the price of one full box before any discount, in cents."""
-    return price_cents * ITEMS_PER_BOX
+    return price_cents * BOX_SIZE
  
  
 def gift_box_total(price_cents, boxes):
